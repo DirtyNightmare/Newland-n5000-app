@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:id="@+id/linearLayout"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/login"
+            android:typeface="sans"
+            android:textSize="35sp"
+            android:textColor="@color/ominiyellow"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/ominiwhitetext"
+            android:textStyle="bold"
+            android:textColorHint="#FFEAEAEA"
+            android:background="@drawable/border"
+            android:padding="10dp"
+            android:hint="@string/brugernavn"
+            android:textSize="20sp"
+            android:id="@+id/edtuserid"
+            android:singleLine="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:hint="@string/adgangskode"
+            android:textColor="#FFEAEAEA"
+            android:textColorHint="@color/ominiwhitetext"
+            android:textStyle="bold"
+            android:background="@drawable/border"
+            android:padding="10dp"
+            android:inputType="textPassword"
+            android:layout_marginTop="5dp"
+            android:id="@+id/edtpass"
+            android:singleLine="true" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/husk_mig"
+            android:id="@+id/saveLoginCheckBox"
+            android:layout_below="@+id/pbbar"
+            android:layout_toLeftOf="@+id/pbbar"
+            android:layout_toStartOf="@+id/pbbar"
+            android:layout_marginRight="74dp"
+            android:layout_marginEnd="74dp"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/ominiyellow" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/border"
+            android:textColor="@color/ominiwhitetext"
+
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/btnlogin"
+            android:text="@string/login" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/pbbar"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

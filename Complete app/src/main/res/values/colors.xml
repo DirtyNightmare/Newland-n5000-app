@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="actionbarbg">#00aa55</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="background">#494949</color>
+    <color name="ominigreen">#00fb0b</color>
+    <color name="ominiwhitetext">#eaeaea</color>
+    <color name="ominiyellow">#fbfb00</color>
+    <color name="ominiborder">#abadb3</color>
+    <color name="ominiselect">#3399ff</color>
+    <color name="ominicontrollbackground">#303030</color>
+</resources>

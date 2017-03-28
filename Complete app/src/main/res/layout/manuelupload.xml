@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <EditText
+        android:id="@+id/edtdir"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginTop="5dp"
+        android:hint="@string/pic_id"
+        android:background="@drawable/border"
+        android:textColor="@color/ominiwhitetext"
+        android:textColorHint="@color/ominiwhitetext"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/edtservername"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="5dp"
+        android:hint="IP NAME OR SERVER NAME"
+        android:background="@drawable/border"
+        android:textColor="@color/ominiwhitetext"
+        android:textColorHint="@color/ominiwhitetext"
+        android:singleLine="true" />
+
+    <Button
+        android:id="@+id/btncopy"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/border"
+        android:text="@android:string/copy"
+        android:textColor="@color/ominiwhitetext"
+        android:textStyle="bold"
+        android:onClick="btncopy"
+        android:typeface="sans" />
+
+    <TextView
+        android:id="@+id/txtinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/pbbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

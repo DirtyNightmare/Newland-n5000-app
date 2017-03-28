@@ -1,0 +1,149 @@
+<resources>
+    <string name="app_name">Omini Data</string>
+
+    <string name="action_settings" translatable="false">Settings</string>
+    <string name="Shelfnumber">Reol Nummer:</string>
+    <string name="itemnumber">Kort nr:</string>
+    <string name="antal_billeder_taget">Antal Billeder Taget:</string>
+    <string name="godkend">        Godkend        </string>
+    <string name="anuller">        Anuller        </string>
+    <string name="indstilinger">Indstilinger</string>
+    <string name="lageropt_lling">Lageroptælling</string>
+    <string name="l_g_del_p_lager">Læg Del På Lager</string>
+    <string name="Skan_Udfyld_Kort_Nummer">Skan/Udfyld Kort Nummer </string>
+    <string name="Skan_Udfyld_Reol_Nummer">Skan/Udfyld Reol Nummer </string>
+    <string name="folder_error">Kan ikke lave mappe til at gemme billederne </string>
+    <string name="Pic_taken">Billedet er nu blevet taget! </string>
+    <string name="not_cardnumber">Dette Er Ikke Et Kort Nummer </string>
+    <string name="not_shelfnumber">Dette Er Ikke Et Reol Nummer </string>
+    <string name="LangDA">Dansk</string>
+    <string name="LangEN">Engelsk</string>
+    <string name="LangPL">Polsk</string>
+    <string name="sprog">Sprog</string>
+    <string-array name="select" >
+        <item>@string/LangDA</item>
+        <item>@string/LangEN</item>
+        <item>@string/LangPL</item>
+    </string-array>
+    <string name="LangLT">Litauisk</string>
+    <string name="year">Årgang</string>
+    <string name="Enginetype">Motor Type</string>
+    <string name="Kilometrage">Kilometer</string>
+    <string name="condition">Tilstand</string>
+    <string name="WarehouseInputDate">Dato_på_lager</string>
+    <string name="Price">Pris</string>
+    <string name="Comments">Comments</string>
+    <string name="Notes">intern bemærkning</string>
+    <string name="Cartype">biltype</string>
+    <string name="partype">Del Type</string>
+    <string name="indsæt_rigtigt_bruger">Please enter User Id and Password</string>
+    <string name="Forbindelses_fejl">Error in connection with SQL server</string>
+    <string name="login_succes">Login successfull</string>
+    <string name="Invalid_Credentials">Invalid Credentials</string>
+    <string name="brugernavn">Brugernavn</string>
+    <string name="adgangskode">Adgangskode</string>
+    <string name="login">Login</string>
+    <string name="Exceptions">Exceptions</string>
+    <string name="husk_mig">Husk mig</string>
+    <string name="Update_succes">Update succes</string>
+    <string name="item_sold">Delen er solgt</string>
+    <string name="untrashed">Delen Er Blevet Genoprettet</string>
+    <string name="pic_id">pic_id</string>
+    <string name="pic_uploaded">Billedet er blevet uploadet</string>
+    <string name="carnumber">stamkort</string>
+    <string name="found">found</string>
+    <string name="parts">parts</string>
+    <string name="itemcode">dito_nr</string>
+    <string name="OEMNumber">oem</string>
+    <string name="CarDoorsType">door</string>
+    <string name="CarTypeApprovalNo">typegodkendenr</string>
+    <string name="CarTypeApprovalDate">Dato_for_type</string>
+    <string name="CarFirstRegistrationDate">dato_for_første_reg</string>
+    <string name="enginecode">enginecode</string>
+    <string name="DiscountPrice">tilbud</string>
+    <string name="Onhand">on_stock</string>
+    <string name="Quantity">Tilgængelig</string>
+    <string name="EuroNorm">EuroNorm</string>
+    <string name="Part">Part</string>
+    <string name="Found">Found</string>
+
+
+    <string name="decode_results" translatable="false">Scan results:</string>
+
+    <string name="single_shoot" translatable="false">Single scan</string>
+
+    <string name="continuous_shoot" translatable="false">Continuous scan</string>
+
+    <string name="exit_button" translatable="false">Exit</string>
+
+    <string name="clear_button" translatable="false">Clear</string>
+
+    <string name="white_light" translatable="false">Fill light 1</string>
+
+    <string name="read_light" translatable="false">Fill light 2</string>
+
+    <string name="location_light" translatable="false">Normal lamp</string>
+
+    <string name="hard_decode" translatable="false">Hardware decode</string>
+
+    <string name="auto_test" translatable="false">Autotest</string>
+
+    <string name="reference_number" translatable="false">Reference barcode</string>
+
+    <string name="total_of_scaner" translatable="false">Total times</string>
+
+    <string name="total_of_scaner_hint" translatable="false">>1000</string>
+
+    <string name="time_interval" translatable="false">Time interval</string>
+
+    <string name="time_interval_hint" translatable="false">>=200</string>
+
+    <string name="test_result" translatable="false">Test result</string>
+
+    <string name="start_test" translatable="false">Start test</string>
+
+    <string name="stop_test" translatable="false">Stop test</string>
+
+    <string name="test_total" translatable="false">Total: </string>
+
+    <string name="test_success" translatable="false">Success: </string>
+
+    <string name="test_fail" translatable="false">Fail: </string>
+
+    <string name="test_timeout" translatable="false">TimeOut:</string>
+
+    <string name="test_fail_list" translatable="false">Error list</string>
+
+    <string name="settings" translatable="false">Settings</string>
+
+    <string name="scan_total" translatable="false">The total of continuous scan:</string>
+
+    <string name="switch_to_single_scan" translatable="false">Please switch to single scan mode!</string>
+
+    <string name="scan_message" translatable="false">Connect scan head abnormal!</string>
+
+    <string name="dialog_ok" translatable="false">Confirm</string>
+
+    <string name="scan_ring" translatable="false">Tone</string>
+
+    <string name="save_result" translatable="false">Save results</string>
+
+    <string name="saving" translatable="false">Saving, please wait.....</string>
+
+    <string name="save_success" translatable="false">Save successful,located in the "results" directory of the SDCard!</string>
+
+    <string name="save_fail" translatable="false">Save failed, please try again!</string>
+
+    <string name="sdcard_not_exist" translatable="false">SdCard isn`t ready, please disconnect the computer and try again!</string>
+
+    <string name="not_blank" translatable="false">Can not be empty!</string>
+
+    <string name="error_input" translatable="false">Enter a appropriate values!</string>
+
+    <string name="try_again" translatable="false">Please try again!</string>
+
+    <string name="average_time" translatable="false">The average time is %1$f ms.</string>
+    <string name="Update_unsucces">Failed</string>
+    <string name="Untrashed">Delen Er Blevet Genoprettet</string>
+    <string name="Succes">Succes</string>
+</resources>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/ominicontrollbackground">
+
+    <RelativeLayout
+        android:id="@+id/btn_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent"
+        android:background="@color/background">
+
+        <SurfaceView
+            android:id="@+id/surfaceView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/layout_area"
+            android:layout_toRightOf="@+id/txtinfocam" />
+
+        <RelativeLayout
+            android:id="@+id/layout_area1"
+            android:layout_width="match_parent"
+
+            android:layout_height="150dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="@color/background">
+
+            <TextView
+                android:id="@+id/txtinfocam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView3"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="13dp"
+                android:background="@android:color/holo_red_dark"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/aprove"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="17dp"
+                android:layout_marginStart="17dp"
+                android:background="@drawable/border"
+                android:focusable="false"
+                android:onClick="btn_aprove"
+                android:text="@string/godkend"
+                android:textColor="@color/ominiwhitetext" />
+
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/aprove"
+                android:layout_marginEnd="22dp"
+                android:layout_marginRight="22dp"
+                android:background="@drawable/border"
+                android:focusable="false"
+                android:onClick="btn_disaprove"
+                android:text="@string/anuller"
+                android:textColor="@color/ominiwhitetext"
+                tools:ignore="RelativeOverlap" />
+
+            <TextView
+                android:id="@+id/Count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/ominiwhitetext"
+                tools:ignore="HardcodedText"
+                android:layout_alignBaseline="@+id/textView3"
+                android:layout_alignBottom="@+id/textView3"
+                android:layout_toRightOf="@+id/textView3"
+                android:layout_marginLeft="11dp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/antal_billeder_taget"
+                android:textColor="@color/ominiwhitetext"
+                android:layout_below="@+id/cancel"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_area"
+            android:layout_width="match_parent"
+
+            android:layout_height="100dp"
+            android:background="@color/background"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Shelfnumber"
+                android:id="@+id/textView2"
+                android:layout_alignBaseline="@+id/shelfnumberbox"
+                android:layout_alignBottom="@+id/shelfnumberbox"
+                android:layout_toLeftOf="@+id/shelfnumberbox"
+                android:layout_toStartOf="@+id/shelfnumberbox"
+                android:textSize="15sp"
+                android:textColor="@color/ominiwhitetext" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/itemnumber"
+                android:id="@+id/textView"
+
+                android:textSize="15sp"
+                android:layout_alignBaseline="@+id/cardnumberbox"
+                android:layout_alignBottom="@+id/cardnumberbox"
+                android:layout_toLeftOf="@+id/cardnumberbox"
+                android:layout_toStartOf="@+id/cardnumberbox"
+                tools:ignore="RelativeOverlap"
+                android:textColor="@color/ominiwhitetext" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/old_card"
+                android:layout_alignTop="@+id/textView"
+                android:layout_toRightOf="@+id/cardnumberbox"
+                android:layout_toEndOf="@+id/cardnumberbox"
+                android:textColor="@color/ominiwhitetext" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Old_shelf"
+                android:layout_alignTop="@+id/textView2"
+                android:layout_toRightOf="@+id/shelfnumberbox"
+                android:layout_toEndOf="@+id/shelfnumberbox"
+                android:textColor="@color/ominiwhitetext" />
+            <EditText
+                android:layout_height="50dp"
+                android:id="@+id/shelfnumberbox"
+                android:layout_alignParentBottom="true"
+                android:layout_alignLeft="@+id/cardnumberbox"
+                android:layout_alignStart="@+id/cardnumberbox"
+                android:layout_alignRight="@+id/cardnumberbox"
+                android:layout_alignEnd="@+id/cardnumberbox"
+                android:maxLines="1"
+                tools:ignore="TextFields"
+                android:textColor="@color/ominiwhitetext"
+                android:background="@drawable/border"
+                android:singleLine="true"
+                android:layout_width="120dp" />
+
+            <EditText
+                android:id="@+id/cardnumberbox"
+                android:padding="5dp"
+                android:layout_height="50dp"
+                android:maxLines="1"
+                tools:ignore="TextFields"
+                android:textColor="@color/ominiwhitetext"
+                android:background="@drawable/border"
+                android:layout_above="@+id/shelfnumberbox"
+                android:layout_centerHorizontal="true"
+                android:singleLine="true"
+                android:layout_width="120dp" />
+
+            <com.melnykov.fab.FloatingActionButton
+                android:id="@+id/btn_take_photo"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_above="@+id/textView2"
+                android:layout_marginRight="74dp"
+                android:layout_marginStart="21dp"
+                android:layout_toLeftOf="@+id/textView2"
+                android:src="@android:drawable/ic_menu_camera"
+                android:visibility="visible" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

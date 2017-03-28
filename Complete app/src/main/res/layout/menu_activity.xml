@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="ominidata.ominidata.com.ominidata.ominidata.MainActivity"
+    android:background="@color/background">
+
+
+    <Button
+        android:id="@+id/btn_cam"
+        android:text="@string/l_g_del_p_lager"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/border"
+        android:textColor="@color/ominiwhitetext" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:text="@string/lageropt_lling"
+        android:id="@+id/btn_inv"
+        android:layout_below="@+id/btn_cam"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/border"
+        android:textColor="@color/ominiwhitetext" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:text="@string/indstilinger"
+        android:id="@+id/btn_options"
+        android:layout_marginTop="45dp"
+        android:layout_below="@+id/btn_inv"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/border"
+        android:textColor="@color/ominiwhitetext" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:text="Manuel Upload"
+        android:id="@+id/buttonupload"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/border"
+        android:textColor="@color/ominiwhitetext"
+        android:layout_below="@+id/btn_options"
+        android:layout_alignParentLeft="true" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:text="Lager"
+        android:id="@+id/btn_lager"
+        android:background="@drawable/border"
+        android:textColor="@color/ominiwhitetext"
+        android:layout_below="@+id/buttonupload"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="24dp" />
+
+</RelativeLayout>

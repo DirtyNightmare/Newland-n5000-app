@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal|top">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:id="@+id/linearLayout5">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Udvikler Indstilinger"
+                android:id="@+id/textView5"
+                android:textSize="50dp"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/linearLayout6">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gem"
+                android:id="@+id/btn_save"
+                android:layout_weight="0.11" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Normal indstilinger"
+                android:id="@+id/btn_nmf"
+                android:layout_weight="0.07" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/linearLayout5"
+            android:layout_above="@+id/linearLayout6"
+            android:baselineAligned="false">
+
+            <TabHost
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tabhost"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TabWidget
+                        android:id="@android:id/tabs"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"></TabWidget>
+
+                    <FrameLayout
+                        android:id="@android:id/tabcontent"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <RelativeLayout
+                            android:id="@+id/tab2"
+                            android:layout_width="match_parent"
+                            android:layout_height="714dp"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="IP Til Server"
+                                android:id="@+id/textView7"
+                                android:layout_marginLeft="13dp"
+                                android:layout_marginStart="13dp"
+                                android:layout_marginTop="40dp"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignBottom="@+id/Server" />
+
+                            <EditText
+                                android:layout_width="200dp"
+                                android:layout_height="50dp"
+                                android:id="@+id/Server"
+                                android:layout_marginTop="18dp"
+                                android:layout_alignParentTop="true"
+                                android:layout_toRightOf="@+id/textView7"
+                                android:layout_marginLeft="60dp"
+                                android:layout_marginStart="60dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Virksomheds ID"
+                                android:id="@+id/textView6"
+                                android:layout_alignBaseline="@+id/Company_ID"
+                                android:layout_alignBottom="@+id/Company_ID"
+                                android:layout_alignLeft="@+id/textView11"
+                                android:layout_alignStart="@+id/textView11" />
+
+                            <EditText
+                                android:layout_width="200dp"
+                                android:layout_height="50dp"
+                                android:id="@+id/DB_User"
+                                android:layout_below="@+id/DB"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignLeft="@+id/DB"
+                                android:layout_alignStart="@+id/DB"
+                                android:layout_toRightOf="@+id/textView9" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="SMB"
+                                android:id="@+id/textView10"
+                                android:layout_alignBaseline="@+id/SMB_path"
+                                android:layout_alignBottom="@+id/SMB_path"
+                                android:layout_alignLeft="@+id/textView6"
+                                android:layout_alignStart="@+id/textView6" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="DB Bruger"
+                                android:id="@+id/textView9"
+                                android:layout_marginTop="10dp"
+                                android:layout_alignTop="@+id/DB_User"
+                                android:layout_alignLeft="@+id/textView7"
+                                android:layout_alignStart="@+id/textView7"
+                                android:layout_alignBottom="@+id/DB_User" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="DB Adgangskode"
+                                android:id="@+id/textView11"
+                                android:layout_marginTop="10dp"
+                                android:layout_alignTop="@+id/DB_Pasw"
+                                android:layout_alignLeft="@+id/textView9"
+                                android:layout_alignStart="@+id/textView9"
+                                android:layout_alignBottom="@+id/DB_Pasw" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="SMB Bruger"
+                                android:id="@+id/textView12"
+                                android:layout_centerVertical="true"
+                                android:layout_alignLeft="@+id/textView10"
+                                android:layout_alignStart="@+id/textView10" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="SMB Adgangskode"
+                                android:id="@+id/textView13"
+                                android:layout_alignBaseline="@+id/SMB_Pasw"
+                                android:layout_alignBottom="@+id/SMB_Pasw"
+                                android:layout_alignLeft="@+id/textView14"
+                                android:layout_alignStart="@+id/textView14" />
+
+                            <EditText
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:inputType="textPassword"
+                                android:ems="10"
+                                android:id="@+id/DB_Pasw"
+                                android:layout_below="@+id/DB_User"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignLeft="@+id/DB_User"
+                                android:layout_alignStart="@+id/DB_User"
+                                android:layout_toRightOf="@+id/textView11" />
+
+                            <EditText
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:inputType="number"
+                                android:ems="10"
+                                android:id="@+id/Company_ID"
+                                android:layout_below="@+id/DB_Pasw"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignLeft="@+id/DB_Pasw"
+                                android:layout_alignStart="@+id/DB_Pasw"
+                                android:layout_toRightOf="@+id/textView6" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Kopier Bileder Fra"
+                                android:id="@+id/textView14"
+                                android:layout_alignBaseline="@+id/Copy_from"
+                                android:layout_alignBottom="@+id/Copy_from"
+                                android:layout_alignLeft="@+id/textView12"
+                                android:layout_alignStart="@+id/textView12" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Buffer Bytes"
+                                android:id="@+id/textView15"
+                                android:layout_alignBaseline="@+id/buffer_bytes"
+                                android:layout_alignBottom="@+id/buffer_bytes"
+                                android:layout_alignLeft="@+id/textView14"
+                                android:layout_alignStart="@+id/textView14" />
+
+                            <EditText
+                                android:layout_width="200dp"
+                                android:layout_height="50dp"
+                                android:id="@+id/DB"
+                                android:layout_below="@+id/Server"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignLeft="@+id/Server"
+                                android:layout_alignStart="@+id/Server"
+                                android:layout_toRightOf="@+id/textView8" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="DB"
+                                android:id="@+id/textView8"
+                                android:layout_alignBaseline="@+id/DB"
+                                android:layout_alignBottom="@+id/DB"
+                                android:layout_alignLeft="@+id/textView7"
+                                android:layout_alignStart="@+id/textView7" />
+
+                            <EditText
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:inputType="number"
+                                android:ems="10"
+                                android:id="@+id/buffer_bytes"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:layout_below="@+id/Copy_from"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignLeft="@+id/Copy_from"
+                                android:layout_alignStart="@+id/Copy_from" />
+
+                            <EditText
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:id="@+id/SMB_user"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:layout_centerVertical="true"
+                                android:layout_alignRight="@+id/Company_ID"
+                                android:layout_alignEnd="@+id/Company_ID"
+                                android:layout_alignLeft="@+id/SMB_path"
+                                android:layout_alignStart="@+id/SMB_path" />
+
+                            <EditText
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/SMB_Pasw"
+                                android:inputType="numberPassword"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:layout_below="@+id/SMB_user"
+                                android:layout_alignRight="@+id/SMB_user"
+                                android:layout_alignEnd="@+id/SMB_user"
+                                android:layout_alignLeft="@+id/SMB_user"
+                                android:layout_alignStart="@+id/SMB_user" />
+
+                            <EditText
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/Copy_from"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:layout_below="@+id/SMB_Pasw"
+                                android:layout_alignRight="@+id/SMB_Pasw"
+                                android:layout_alignEnd="@+id/SMB_Pasw"
+                                android:layout_alignLeft="@+id/SMB_Pasw"
+                                android:layout_alignStart="@+id/SMB_Pasw" />
+
+                            <EditText
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/SMB_path"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:layout_above="@+id/SMB_user"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignLeft="@+id/Company_ID"
+                                android:layout_alignStart="@+id/Company_ID"
+                                android:inputType="text" />
+
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/tab3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Preview FPS"
+                                android:id="@+id/textView16"
+                                android:layout_marginLeft="13dp"
+                                android:layout_marginStart="13dp"
+                                android:layout_marginTop="40dp"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignBottom="@+id/PR_fps"/>
+
+                            <EditText
+                                android:layout_width="200dp"
+                                android:layout_height="50dp"
+                                android:id="@+id/PR_fps"
+                                android:layout_marginTop="18dp"
+                                android:layout_alignParentTop="true"
+                                android:layout_toRightOf="@+id/textView16"
+                                android:layout_marginLeft="60dp"
+                                android:layout_marginStart="60dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true"
+                                android:numeric="integer" />
+
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Display Orientation"
+                                android:id="@+id/textView18"
+                                android:layout_alignTop="@+id/disp_Orn"
+                                android:layout_alignLeft="@+id/textView16"
+                                android:layout_alignStart="@+id/textView16"
+                                android:layout_alignBottom="@+id/disp_Orn" />
+
+                            <EditText
+                                android:layout_width="200dp"
+                                android:layout_height="50dp"
+                                android:id="@+id/Pr_Se"
+                                android:layout_below="@+id/PR_fps"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignLeft="@+id/PR_fps"
+                                android:layout_alignStart="@+id/PR_fps"
+                                android:layout_toRightOf="@+id/textView16" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Preview Size"
+                                android:id="@+id/textView19"
+                                android:layout_alignTop="@+id/Pr_Se"
+                                android:layout_alignLeft="@+id/textView16"
+                                android:layout_alignStart="@+id/textView16"
+                                android:layout_alignBottom="@+id/Pr_Se" />
+
+                            <EditText
+                                android:layout_width="200dp"
+                                android:layout_height="50dp"
+                                android:id="@+id/disp_Orn"
+                                android:layout_below="@+id/Pr_Se"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignLeft="@+id/Pr_Se"
+                                android:layout_alignStart="@+id/Pr_Se"
+                                android:layout_toRightOf="@+id/textView16"
+                                android:numeric="integer" />
+
+                        </RelativeLayout>
+
+                    </FrameLayout>
+                </LinearLayout>
+            </TabHost>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

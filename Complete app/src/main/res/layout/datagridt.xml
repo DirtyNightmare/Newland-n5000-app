@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/btn_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent"
+        >
+
+        <com.HardcodedDataGrid.datagrid.DataGrid
+            android:layout_height="match_parent" android:layout_width="match_parent" android:background="@color/ominicontrollbackground" android:id="@+id/datagrid"
+            android:layout_below="@+id/layout_area"
+            android:weightSum="1"
+            android:layout_above="@+id/layout_area1">
+        </com.HardcodedDataGrid.datagrid.DataGrid>
+
+        <RelativeLayout
+            android:id="@+id/layout_area1"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="@color/background"
+            android:layout_height="50dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/found"
+                android:id="@+id/parts"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="24dp"
+                android:layout_marginBottom="15dp"
+                android:textColor="@color/ominiwhitetext" />
+
+
+            <Button
+                android:text="Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/parts"
+                android:layout_marginLeft="226dp"
+                android:id="@+id/btnsearch"
+                android:onClick="btnsearch"
+                android:layout_alignParentTop="true" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_area"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/background"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/carnumber"
+                android:id="@+id/textView22"
+
+                android:textSize="15sp"
+                tools:ignore="RelativeOverlap"
+                android:textColor="@color/ominiwhitetext"
+                android:layout_marginLeft="25dp"
+                android:layout_alignBottom="@+id/carcode"
+                android:layout_toRightOf="@+id/cardnumber" />
+
+            <EditText
+                android:id="@+id/cardnumber"
+                android:padding="5dp"
+                android:layout_height="25dp"
+                android:maxLines="1"
+                tools:ignore="TextFields"
+                android:background="@drawable/border"
+                android:textColor="@color/ominiwhitetext"
+                android:layout_width="100dp"
+                android:layout_marginLeft="51dp"
+                android:layout_alignBottom="@+id/textView21"
+                android:layout_toRightOf="@+id/textView21"
+                android:textSize="14sp"
+                android:maxLength="6" />
+
+            <EditText
+                android:id="@+id/shelfnumberbox2"
+                android:padding="5dp"
+                android:layout_height="25dp"
+                android:maxLines="1"
+                tools:ignore="TextFields"
+                android:layout_marginLeft="17dp"
+                android:background="@drawable/border"
+                android:textColor="@color/ominiwhitetext"
+                android:layout_width="50dp"
+                android:layout_alignBottom="@+id/textView17"
+                android:layout_toRightOf="@+id/textView17"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/itemnumber"
+                android:id="@+id/textView21"
+
+                android:textSize="15sp"
+                tools:ignore="RelativeOverlap"
+                android:textColor="@color/ominiwhitetext"
+                android:layout_marginLeft="42dp"
+                android:layout_alignBottom="@+id/editText3"
+                android:layout_toRightOf="@+id/editText3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/itemcode"
+                android:id="@+id/textView17"
+
+                android:textSize="15sp"
+                tools:ignore="RelativeOverlap"
+                android:layout_marginTop="19dp"
+                android:textColor="@color/ominiwhitetext"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="19dp" />
+
+            <EditText
+                android:id="@+id/editText3"
+                android:padding="5dp"
+                android:layout_height="25dp"
+                android:maxLines="1"
+                tools:ignore="TextFields"
+                android:background="@drawable/border"
+                android:textColor="@color/ominiwhitetext"
+                android:layout_width="50dp"
+                android:layout_alignTop="@+id/shelfnumberbox2"
+                android:layout_toRightOf="@+id/shelfnumberbox2"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/carcode"
+                android:padding="5dp"
+                android:layout_height="25dp"
+                android:maxLines="1"
+                tools:ignore="TextFields"
+                android:background="@drawable/border"
+                android:textColor="@color/ominiwhitetext"
+                android:layout_width="100dp"
+                android:layout_alignBaseline="@+id/cardnumber"
+                android:layout_alignBottom="@+id/cardnumber"
+                android:layout_alignParentRight="true"
+                android:textSize="14sp" />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</FrameLayout>
