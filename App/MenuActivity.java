@@ -17,7 +17,7 @@ import com.ominidata.device.scan.ScanActivity;
 
 
 public class MenuActivity extends Activity {
-    Button btn_cam,btn_inv,btn_option,buttonupload,btn_lager;
+    Button btn_scan,btn_inv,btn_option,buttonupload,btn_lager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +30,7 @@ public class MenuActivity extends Activity {
         btn_lager = (Button) findViewById(R.id.btn_lager);
 
 
-        btn_cam.setOnClickListener(new View.OnClickListener(){
+        btn_scan.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(getApplication(),ScanActivity.class);
