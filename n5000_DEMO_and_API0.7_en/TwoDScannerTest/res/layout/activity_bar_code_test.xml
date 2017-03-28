@@ -1,0 +1,121 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="${packageName}.${activityClass}" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/decode_results"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/scan_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/scan_total"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/result_listView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp" >
+
+        <Button
+            android:id="@+id/save_result"
+            style="@style/horizontal_button_style"
+            android:layout_weight="2"
+            android:onClick="saveResult"
+            android:text="@string/save_result" />
+
+        <CheckBox
+            android:id="@+id/white_light_checkBox"
+            style="@style/horizontal_button_style"
+            android:layout_weight="1"
+            android:text="@string/white_light"
+            android:visibility="gone" />
+
+        <CheckBox
+            android:id="@+id/red_light_checkBox"
+            style="@style/horizontal_button_style"
+            android:layout_weight="1"
+            android:text="@string/read_light"
+            android:visibility="gone" />
+
+        <CheckBox
+            android:id="@+id/location_light_checkBox"
+            style="@style/horizontal_button_style"
+            android:layout_weight="1"
+            android:text="@string/location_light"
+            android:visibility="gone" />
+
+        <CheckBox
+            android:id="@+id/scan_ring_checkBox"
+            style="@style/horizontal_button_style"
+            android:layout_weight="2"
+            android:text="@string/scan_ring"
+            android:checked="true"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/auto_test"
+            style="@style/horizontal_button_style"
+            android:layout_weight="2"
+            android:onClick="autoTestOnClick"
+            android:text="@string/auto_test" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/single_button"
+            style="@style/horizontal_button_style"
+            android:layout_weight="3"
+            android:onClick="singleShootOnClick"
+            android:text="@string/single_shoot" />
+
+        <ToggleButton
+            android:id="@+id/continuous_button"
+            style="@style/horizontal_button_style"
+            android:layout_weight="3"
+            android:onClick="continuousShootOnClick"
+            android:textOff="@string/continuous_shoot"
+            android:textOn="@string/continuous_shoot" />
+
+        <Button
+            android:id="@+id/clear_button"
+            style="@style/horizontal_button_style"
+            android:layout_weight="2"
+            android:onClick="clearOnClick"
+            android:text="@string/clear_button" />
+
+        <Button
+            android:id="@+id/exit_button"
+            style="@style/horizontal_button_style"
+            android:layout_weight="2"
+            android:onClick="exitOnClick"
+            android:text="@string/exit_button" />
+    </LinearLayout>
+
+</LinearLayout>

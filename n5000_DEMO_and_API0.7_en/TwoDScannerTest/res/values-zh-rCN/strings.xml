@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">扫描测试</string>
+    <string name="decode_results">扫描结果：</string>
+    <string name="single_shoot">单扫</string>
+    <string name="continuous_shoot">连扫</string>
+    <string name="exit_button">退出</string>
+    <string name="clear_button">清除</string>
+    <string name="white_light">补光灯1</string>
+    <string name="read_light">补光灯2</string>
+    <string name="location_light">定位灯</string>
+    <string name="hard_decode">硬解码</string>
+    <string name="auto_test">自动测试</string>
+    <string name="reference_number">基准条码</string>
+    <string name="total_of_scaner">扫描总次数</string>
+    <string name="total_of_scaner_hint">&gt;1000</string>
+    <string name="time_interval">扫描时间间隔</string>
+    <string name="time_interval_hint">&gt;=200</string>
+    <string name="test_result">测试结果</string>
+    <string name="start_test">开始测试</string>
+    <string name="stop_test">停止测试</string>
+    <string name="test_total">总数:</string>
+    <string name="test_success">成功:</string>
+    <string name="test_fail">失败:</string>
+    <string name="test_timeout">超时:</string>
+    <string name="test_fail_list">错误条码列表</string>
+    <string name="settings">设置</string>
+    <string name="scan_total">连扫总数：</string>
+    <string name="switch_to_single_scan">请切换到单扫模式！</string>
+    <string name="scan_message">连接扫描头异常！</string>
+    <string name="dialog_ok">确定</string>
+    <string name="scan_ring">扫描声</string>
+    <string name="save_result">保存结果</string>
+    <string name="saving">保存中，请等待、、、</string>
+    <string name="save_success">保存成功，位于SDCard中的results目录中！</string>
+    <string name="save_fail">保存失败，请重试！</string>
+    <string name="sdcard_not_exist">SdCard未准备好，请断开电脑连接并重试！</string>
+    <string name="not_blank">不能为空！</string>
+    <string name="error_input">输入一个合适的值！</string>
+    <string name="try_again">请重试！</string>
+    <string name="average_time">平均时间为 %1$f 毫秒。</string>
+
+</resources>
